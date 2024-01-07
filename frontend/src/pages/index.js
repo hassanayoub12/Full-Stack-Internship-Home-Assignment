@@ -8,10 +8,8 @@ const Index = () => {
   const [employees, setEmployees] = useState([]);
 
   const processFile = async () => {
-    // Process the file and retrieve employee data (You'll need to implement this logic)
 
-    // For demonstration purposes, let's assume `processedEmployees` is an array of employee objects retrieved after processing the file
-    const processedEmployees = []; // Replace this with the actual processing logic
+    const processedEmployees = []; 
 
     setEmployees(processedEmployees);
   };
