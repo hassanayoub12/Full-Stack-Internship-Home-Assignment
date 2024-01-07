@@ -1,7 +1,6 @@
 import { useState } from 'react';
-import UploadFile from '../components/UploadFile';
-import ProcessButton from '../components/ProcessButton.js';
-import EmployeeTable from '../components/EmployeeTable.js';
+import UploadFile from '../components/PrincipalePage';
+
 
 const Index = () => {
   const [file, setFile] = useState(null);
@@ -18,8 +17,7 @@ const Index = () => {
     <div>
       <h1>Upload Employee CSV</h1>
       <UploadFile setFile={setFile} />
-      <ProcessButton file={file} processFile={processFile} />
-      {employees.length > 0 && <EmployeeTable employees={employees} />}
+     
     </div>
   );
 };
